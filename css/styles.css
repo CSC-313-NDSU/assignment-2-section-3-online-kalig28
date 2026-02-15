@@ -1,0 +1,70 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:darkblue;
+}
+
+footer{
+    margin-top: 40px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+ul {
+   list-style-position: inside;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+.hero{
+    height: fit-content;
+    background: linear-gradient(to right, #AE307E, #FC466B);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.about-page {
+    background-color: cornflowerblue;
+}
+
+.about-page h2{
+    color: lightcoral;
+}
+
+.about-page h3{
+    color:#AE307E;
+    background-color: mediumseagreen;
+}
+
+.about-page .me-paragraph {
+    background-color: mistyrose;
+    color:cornflowerblue;
+}
+
+.about-page .row {
+    background-color: darkcyan;
+    color: darksalmon;
+}
+
+.carousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1 10px 25px rgba(0,0,0,0.2);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.carousel img {
+    height: 300px;
+    object-fit: cover;
+}

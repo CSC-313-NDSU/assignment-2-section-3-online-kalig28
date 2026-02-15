@@ -53,12 +53,12 @@
     </header>
 
     <div class="container">
-        <h2 class="text-center">My Projects</h2>
-      <div class="row g-4">
+      <h2 class="text-center">My Projects</h2>
+      <div class="row align-items-stretch">
         <div class="col-md-4">
-          <div class="card shadow">
+          <div class="card shadow d-flex flex-column">
             <img src="images/project1.jpg" class="card-img-top" />
-            <div class="card-body">
+            <div class="card-body d-flex flex-column text-center">
               <h5>Java Project</h5>
               <p>Data structures implementation.</p>
             </div>
@@ -66,38 +66,34 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card shadow">
+          <div class="card shadow d-flex flex-column">
             <img src="images/project2.jpg" class="card-img-top" />
-            <div class="card-body">
+            <div class="card-body d-flex flex-column text-center">
               <h5>Web Project</h5>
               <p>Responsive website design.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-4">
-  <div class="card shadow h-100">
-    <div class="card-body text-center">
+        <div class="col-md-4">
+          <div class="card shadow d-flex flex-column">
+            <img src="images/project3.jpg"
+     class="card-img-top"
+     style="cursor: pointer;"
+     onclick="showHello()" />
+            <div class="card-body d-flex flex-column text-center">
+              <h5 class="card-title">Interactive Hello World</h5>
 
-      <h5 class="card-title">Interactive Hello World</h5>
+              <p class="card-text">
+                Click the picture to display a Hello World message using
+                JavaScript.
+              </p>
 
-      <p class="card-text">
-        Click the button below to display a Hello World message using JavaScript.
-      </p>
-
-      <!-- Button -->
-      <button class="btn btn-primary" onclick="showHello()">
-        Click Me
-      </button>
-
-      <!-- Output Area -->
-      <p id="helloOutput" class="mt-3 fw-bold text-success"></p>
-
-    </div>
-  </div>
-</div>
-
-
+              <!-- Output Area -->
+              <p id="helloOutput" class="mt-3 fw-bold text-success"></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -105,10 +101,11 @@
       <p>© 2026 My Website</p>
       <address class="mt-3">Fargo, North Dakota</address>
     </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-      <script>function showHello() {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function showHello() {
         document.getElementById("helloOutput").textContent = "Hello World!";
       }
-        </script>
+    </script>
   </body>
 </html>

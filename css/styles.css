@@ -79,6 +79,11 @@ ol {
     
 }
 
-.contact-page .container {
-    
+.portfolio-page {
+    background-color: mediumpurple;
+
+}
+
+.portfolio-page h2 {
+    color: gold;
 }

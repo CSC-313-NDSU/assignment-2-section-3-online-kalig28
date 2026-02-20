@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <!--Home page-->
+
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">My Website</a>
+
+          <!--Hamburger Button-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Menu Items-->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow-1">
+      <section class="hero d-flex align-items-center" style="min-height: 70vh">
+        <div class="container">
+            <div class="row align-items-center">
+                <!--Left side-->
+                <div class="col-md-6 text-center">
+                    <h1 class="display-4">My Website</h1>
+
+                    <p class="lead"> Welcome to my personal portfolio website.</p>
+
+                    <a href="portfolio.html"
+            ><img
+              src="images/profile.jpg"
+              class="img-fluid rounded shadow w-75"
+              alt="Profile picture"/></a>
+
+              <p><small>View my work.</small></p>
+                </div>
+
+                <!--Right side-->
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum eius exercitationem odio quia repellendus ex adipisci aliquid! Tempora ratione sint eligendi. Aspernatur ratione recusandae magnam, quibusdam dolore minima totam!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus vel, voluptate porro nisi ullam minus?</p>
+                    </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="container my-5">
+
+  <h2 class="text-center mb-4">My Photos</h2>
+
+  <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators (dots) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Images -->
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="images/photo1.jpg" class="d-block w-100" alt="Photo 1">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/photo2.jpg" class="d-block w-100" alt="Photo 2">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/photo3.jpg" class="d-block w-100" alt="Photo 3">
+      </div>
+
+    </div>
+
+    <!-- Left/Right arrows -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+</section>
+
+
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+      <p>© 2026 My Website</p>
+      <address class="mt-3">Fargo, North Dakota</address>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
